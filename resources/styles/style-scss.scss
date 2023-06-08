@@ -1,0 +1,149 @@
+/* NAVBAR STYLING STARTS */
+.variante-meniu {
+  position: fixed;
+  left: 1.5%;
+  right: 1.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--brown);
+  color: var(--white);
+}
+
+.nav-links a, .nav-links p {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* LOGO */
+.logo {
+  font-size: 2rem;
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+
+.menu li > a, p {
+  transition: background-color 300ms linear;
+    -webkit-transition: color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+}
+
+.menu li a:hover {
+  color: red;
+}
+
+.menu li {
+  padding: 1rem;
+}
+
+.dropdown-parent {
+  position: relative; 
+}
+
+.dropdown {
+  background-color: var(--brown);
+  position: absolute;
+  display: none;
+  list-style: none;
+  animation: grow-out 500ms ease-in-out forwards;
+  transform-origin: top center;
+  padding: 0px;
+}
+
+@keyframes grow-out {
+  0% {
+     transform: scale(0);
+ }
+ 80% {
+     transform: scale(1.1);
+ }
+ 100% {
+     transform: scale(1);
+ }
+}
+
+.dropdown li + li {
+  margin-top: 0.5rem;
+}
+
+.dropdown li {
+  padding: 0.5rem 1rem;
+  width: 6rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: var(--brown);
+}
+
+.dropdown-parent:hover .dropdown {
+  display: block;
+}
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+  display: none;
+} 
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+  .variante-meniu{
+    left: 0;
+    right: 0;
+  }
+
+ .menu {
+    opacity: 0;
+    position: absolute;
+    background-color: var(--brown);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 1rem 0;
+
+    transition: all .5s ease-in-out;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    transition: 0.3s ease;
+  }
+
+  input[type=checkbox]:checked ~ .menu {
+    opacity: 1;
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown-parent:hover .dropdown {
+    display: block;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+}

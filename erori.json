@@ -1,0 +1,34 @@
+{
+    "cale_baza": [],
+    "eroare_default": {
+        "code": 500,
+        "status": false,
+        "title": "Oops!",
+        "description": "Something strange happened",
+        "image": "/resources/images/errors/404.jpg"
+    },
+    "info_erori": {
+        "400": {
+            "code": 400,
+            "status": false,
+            "title": "Bad request",
+            "description": "The page you tried to access doesn't exist",
+            "image": "/resources/images/errors/400.jpg"
+        },
+        "403": {
+            "code": 403,
+            "status": false,
+            "title": "Forbidden",
+            "description": "The page you tried to access is forbidden",
+            "image": "/resources/images/errors/403.jpg"
+        },
+       "404": {
+            "code": 404,
+            "status": false,
+            "title": "Page not found",
+            "description": "The page you tried to access was not found",
+            "image": "/resources/images/errors/404.jpg"
+        }
+    }
+
+}

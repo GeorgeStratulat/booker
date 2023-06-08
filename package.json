@@ -1,0 +1,30 @@
+{
+  "name": "booker",
+  "version": "1.0.0",
+  "description": "Proiect pentru tehnici web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "booker",
+    "carti",
+    "books",
+    "caiete",
+    "online",
+    "citit",
+    "cititori"
+  ],
+  "author": "George Stratulat",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

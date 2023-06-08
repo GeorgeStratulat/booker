@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <%- include("../fragmente/head") %>
+<body>
+    
+  <%- include("../fragmente/header") %>
+
+    <main style="margin-top: 5rem;">
+      <div class="wrapper">
+        <div class="one">
+          <a href="/resources/images/home/small.jpeg" download>
+            <picture style="width: 100%;">
+                <source 
+                   media="(min-width: 650px)"
+                   srcset="./resources/images/home/large.jpeg">
+                <source 
+                   media="(min-width: 465px)"
+                   srcset="/resources/images/home/medium.jpeg">
+                <img style="width: 100%" src="/resources/images/home/small.jpeg" alt="carte deschisa">
+             </picture>
+        </a>
+        </div>
+
+        <div class="three">
+          <p>Calendar evenimente</p>
+        </div>
+        
+        <div class="two">
+          <table>
+            <thead>
+              <tr>
+                <th>Nr.</th>
+                <th>Produs</th>
+                <th >Disponibil</th>
+                <th>Cantitati</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1.</td>
+                <td>Ascutitoare metalica</td>
+                <td rowspan="3">Da</td>
+                <td>4322</td>
+              </tr>
+              <tr>
+                <td>2.</td>
+                <td>Plastilina copii</td>
+                <td>3213</td>
+              </tr>
+              <tr>
+                <td>3.</td>
+                <td>Stilou cu cerneala</td>
+                <td>2993</td>
+              </tr>
+              <tr>
+                <td>4.</td>
+                <td>Top foi A4</td>
+                <td>Nu</td>
+                <td>2500</td>
+
+              </tr>
+            </tbody>
+            <tfoot>
+              <td/>
+              <td/>
+              <td>Total:</td>
+              <td>9999</td>
+
+            </tfoot>
+            
+          </table>
+        </div>
+
+        <div class="four">
+          <p>Anunturi</p>
+        </div>
+
+        <div class="eight">
+          <p>Zona de stilizare</p>
+        </div>
+
+        <div class="seven">
+          <p>Site si server</p>
+        </div>
+
+        <div class="five">
+          <p>Lista utilizatori online</p>
+        </div>
+
+        <div class="six">
+          <p>Utilizator si statistici</p>
+          <p><%- ipAddress -%></p>
+        </div>
+
+      </div>
+
+       
+        
+
+        <section>
+            <h2>
+                Cea mai mare librarie online.
+            </h2>
+            <p>Bine ați venit în librăria noastră <b>online</b>, un paradis literar ce aduce fascinația cărților direct în confortul căminului tău. Explorează o colecție vastă de <b>cărți</b> din toate genurile și domeniile, de la romane clasice și cărți de ficțiune contemporană, la cărți de dezvoltare personală, cărți pentru copii și manuale academice.</p>
+            <p>Cu o interfață prietenoasă și ușor de utilizat, librăria noastră online îți oferă o experiență plăcută de cumpărare. Căutarea cărților preferate devine simplă și rapidă, iar funcția de filtrare îți permite să <em>navighezi</em> prin titluri, autori, genuri sau edituri. Avem grijă să adăugăm în mod constant noi apariții <i>editoriale</i> și cărți populare, pentru a te ține mereu la curent cu cele mai recente lansări.</p>
+            <p>Fie că ești un cititor pasionat, un student în căutare de materiale <i>academice</i> sau un părinte dornic să ofere copiilor cele mai captivante lecturi, librăria noastră online are tot ce ai nevoie. Poți adăuga cărțile dorite în coșul de cumpărături și să finalizezi ușor comanda prin intermediul unui proces de plată securizat.</p>
+            <p><strong>Nu facem livrari in weekend!</strong></p>
+        </section>
+          <div class="tab-container">
+            <iframe class="tab-iframe" src="https://www.youtube.com/embed/O7feLaxtTZ0" name="video_iframe"></iframe>
+            <div class="tab-links">
+              <a class="tab-link" href="https://www.youtube.com/embed/O7feLaxtTZ0" target="video_iframe"><p>20 de romane clasice preferate</p></a>
+            <a class="tab-link" href="https://www.youtube.com/embed/GlS1fKn9wtE" target="video_iframe"><p>Căutătorul de cărți</p></a>
+            <a class="tab-link" href="https://www.youtube.com/embed/X7oonq5wiuA" target="video_iframe"><p>10 carti</p></a>
+            </div>
+          </div>
+        <section>
+            <h2>
+                Nu esti sigur ce carti ti se potrivesc?
+            </h2>
+            <a href="https://www.whichbook.net/" target="_blank">Click aici pentru a-ti gasi cartea perfecta!</a>
+        </section>
+
+        <section id="faq">
+            <h2>Întrebări frecvente</h2>
+          
+            <div class="faq">
+              <h3>Cum plasez o comandă?</h3>
+              <p>Pentru a plasa o comandă, urmați acești pași simpli:</p>
+              <ol>
+                <li>Navigați prin librărie și găsiți cărțile dorite.</li>
+                <li>Adăugați cărțile în coșul de cumpărături.</li>
+                <li>Mergeți la pagina de finalizare a comenzii.</li>
+                <li>Completați informațiile de livrare și selectați opțiunile de plată.</li>
+                <li>Confirmați comanda și finalizați procesul de plată.</li>
+              </ol>
+            </div>
+          
+            <div class="faq">
+              <h3>Care sunt opțiunile de plată acceptate?</h3>
+              <p>Acceptăm următoarele metode de plată:</p>
+              <ul>
+                <li>Carduri de credit/debit (Visa, Mastercard, American Express)</li>
+                <li>Plată prin PayPal</li>
+                <li>Plată la livrare (disponibilă doar în anumite zone)</li>
+              </ul>
+            </div>
+          
+            <div class="faq">
+              <h3>Cât timp durează livrarea comenzilor?</h3>
+              <p>Timpul de livrare depinde de locație și de metoda de livrare selectată. În general, livrările în interiorul țării vor ajunge în termen de 2-5 zile lucrătoare, iar livrările internaționale pot dura între 5 și 10 zile lucrătoare.</p>
+            </div>
+          
+            <div class="faq">
+              <h3>Pot returna o carte dacă nu sunt mulțumit?</h3>
+              <p>Da, avem o politică de returnare flexibilă. Dacă nu sunteți mulțumit de o carte achiziționată, vă rugăm să ne contactați în termen de 14 zile de la primirea comenzii și vom oferi instrucțiuni detaliate privind procesul de returnare și rambursare.</p>
+            </div>
+          </section>
+
+    </main>
+
+    <%- include("../fragmente/footer") %>
+</body>
+</html>
