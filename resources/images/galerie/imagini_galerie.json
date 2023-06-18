@@ -1,11 +1,76 @@
 {
-    "cale_galerie": "",
+    "cale_galerie": "/resources/images/galerie",
     "imagini": [
         {
-            "cale_fisier": "",
-            "titlu": "",
-            "alt": "",
-            "luni": ["ianuarie", "februarie"]
+            "cale_fisier": "1.jpg",
+            "titlu": "Femeie care citeste",
+            "alt": "Femeie care citeste",
+            "luni": ["iunie", "mai"]
+        },
+        {
+            "cale_fisier": "2.jpg",
+            "titlu": "Trandafir",
+            "alt": "Trandafir",
+            "luni": ["iunie", "mai"]
+        },
+        {
+            "cale_fisier": "3.jpg",
+            "titlu": "Carti vechi",
+            "alt": "Carti vechi",
+            "luni": ["iunie", "mai"]
+        },
+        {
+            "cale_fisier": "4.jpg",
+            "titlu": "Carnet",
+            "alt": "Carnet",
+            "luni": ["iunie", "mai"]
+        },
+        {
+            "cale_fisier": "5.jpg",
+            "titlu": "Carte cu ochelari",
+            "alt": "Carte cu ochelari",
+            "luni": ["iunie", "mai"]
+        },
+        {
+            "cale_fisier": "6.jpg",
+            "titlu": "Carti vechi",
+            "alt": "Carti vechi",
+            "luni": ["iunie", "mai"]
+        },
+        {
+            "cale_fisier": "7.jpg",
+            "titlu": "Pagini",
+            "alt": "Pagini",
+            "luni": ["iunie", "mai"]
+        },
+        {
+            "cale_fisier": "8.jpg",
+            "titlu": "Taram de poveste",
+            "alt": "Taram de poveste",
+            "luni": ["iunie", "mai"]
+        },
+        {
+            "cale_fisier": "9.jpg",
+            "titlu": "Trandafir",
+            "alt": "Trandafir",
+            "luni": ["iunie", "mai"]
+        },
+        {
+            "cale_fisier": "10.jpg",
+            "titlu": "Raft",
+            "alt": "Raft",
+            "luni": ["iunie", "mai"]
+        },{
+            "cale_fisier": "11.jpg",
+            "titlu": "Ochelari",
+            "alt": "Ochelari",
+            "luni": ["iunie", "mai"]
+        }
+        ,{
+            "cale_fisier": "12.jpg",
+            "titlu": "Cana pisica",
+            "alt": "Cana pisica",
+            "luni": ["mai"]
         }
     ]
 }

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <%- include("../fragmente/head") %>
+<body>
+    <div class="galerie_container">
+        <%
+        const month = new Date().toLocaleString('ro-ro', { month: 'long' })  
+        for(let img of globals.imagini_galerie) { 
+            console.log(img)
+            if( img.luni.includes(month)) {
+        %>
+            <div class="galerie_item">
+                <figure>
+                        <img src="<%- img.fisier %>" alt="<%- img.alt %>" style="width: 100%">
+                        <figcaption>Carti</figcaption>
+                    </figure>
+            </div>
+        <% }} %>
+    </div>
+</body>
+</html>

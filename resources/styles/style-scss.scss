@@ -1,12 +1,16 @@
 /* NAVBAR STYLING STARTS */
+header {
+  margin-bottom: 6rem;
+}
 .variante-meniu {
   position: fixed;
+  top: 0;
+  height: 5rem;
   left: 1.5%;
   right: 1.5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
   background-color: var(--brown);
   color: var(--white);
 }

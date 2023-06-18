@@ -1,0 +1,33 @@
+.galerie_container {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:0.5em;
+    grid-column-gap:0.5em;
+    counter-reset: nrimag;
+}
+
+.galerie_item {
+    border: 1px solid black;
+    padding: 5rem;
+}
+
+.galerie_item figcaption {
+    text-align:center;
+    counter-increment: nrimag 1;
+}
+
+.galerie_item figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    margin: auto;
+}
+
+.galerie_item figcaption::before{
+    content: counter(nrimag, lower-greek) ")";
+}
+
+.galerie_container > div:nth-child(2n) > figure {
+    display: none;
+}
